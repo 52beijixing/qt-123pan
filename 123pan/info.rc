@@ -1,0 +1,36 @@
+IDI_ICON1 ICON DISCARDABLE "favicon.ico"
+#include <winver.h>
+
+#pragma code_page(65001)
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION 1,0,0,0
+PRODUCTVERSION 1,0,0,0
+FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+FILEFLAGS VS_FF_DEBUG
+#else
+FILEFLAGS 0x0L
+#endif
+FILEOS VOS__WINDOWS32
+FILETYPE VFT_APP
+{
+    BLOCK "StringFileInfo"
+    {
+        BLOCK "000404b0"
+        {
+            VALUE "CompanyName", "Qt-123盘-直链解析器"
+			VALUE "ProductName", "Qt-123盘-直链解析器"
+            VALUE "LegalCopyright", "Copyright (C) 2023 52beijixing"
+            VALUE "FileDescription", "123盘-直链解析器"
+            VALUE "FileVersion", "1, 0, 0, 0"
+            VALUE "ProductVersion", "1.0.0.0"
+        }
+    }
+
+    BLOCK "VarFileInfo"
+    {
+        VALUE "Translation", 0x0004, 1200
+
+    }
+}
